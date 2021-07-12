@@ -141,36 +141,36 @@ The following DID URL constructions are used to address [[ref: Hub Instances]] f
 with a given DID, as located via the DID resolution process.
 
 ::: note
-For example purposes, the parameters above are not URL encoded, but should be when using Identity Hub URLs in practice.
+For example purposes, the parameters in the URLs below are not URL encoded, but should be when using Identity Hub URLs in practice.
 :::
-
+ 
 #### Fetch-type URLs
 
-*DID-Relative URL addressing a single file:*
-
-```json
+*DID-Relative URL addressing a single file:* 
+ 
+```json 
 did:example:123?service=IdentityHub&relativeRef=/Resources?id=Qm3fw45v46w45vw54wgwv78jbdse4w
-```
-
-*DID-Relative URL addressing a Collection of one resource type:*
-
-```json
+``` 
+ 
+*DID-Relative URL addressing a Collection of one resource type:* 
+ 
+```json 
 did:example:123?service=IdentityHub&relativeRef=/CollectionsQuery?uri=https://schema.org/MusicPlaylist
-```
-
-*DID-Relative URL addressing multiple Collections of different resource types:*
-
-```json
+``` 
+ 
+*DID-Relative URL addressing multiple Collections of different resource types:* 
+ 
+```json 
 did:example:123?service=IdentityHub&relativeRef=/CollectionsQuery?uri=https://schema.org/MusicPlaylist&uri=https://schema.org/Event
-```
-
+``` 
+ 
 #### Submit-type URLs
 
 *DID-Relative URL for submitting a single file:*
-
-```json
+ 
+```json 
 did:example:123?service=IdentityHub&relativeRef=/CollectionsCreate
-```
+``` 
 
 *Payload of submission:*
 
